@@ -1,3 +1,4 @@
+# Readme.md
 Accurate knowledge of a patient’s condition is critical. Electronic monitoring systems and health records provide rich information for performing predictive analytics. Here I am trying to  use ICU clinical data to predict the mortality of patients in one month after discharge.
 
 About the Data:
@@ -11,8 +12,7 @@ patient id: Identifies the patients in order to differentiate them from others. 
 This is how we approach the problem.
 A Logistic Regression classifier can be trained with historical health-care data to make future predictions. A training set D is composed of {(xi,yi)}N1 , where yi ∈ {0,1} is the label and xi ∈ Rd is the feature vector of the i-th patient. In logistic regression we have
 p(y = 1|x ) = σ(wTx ), where w ∈ Rd is the learned coefficient vector and σ(t) = 1 iii 1+e−t
-is
-the sigmoid function.
+is the sigmoid function.
 Suppose your system continuously collects patient data and predicts patient severity us-
 ing Logistic Regression. When patient data vector x arrives to your system, the system needs to predict whether the patient has a severe condition (predicted label yˆ ∈ {0, 1}) and requires immediate care or not. The result of the prediction will be delivered to a physician, who can then take a look at the patient. Finally, the physician will provide feedback (truth label y ∈ {0, 1}) back to your system so that the system can be upgraded, i.e. w recomputed, to make better predictions in the future.
 
