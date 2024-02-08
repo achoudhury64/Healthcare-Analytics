@@ -33,4 +33,4 @@ Listed below are a few concepts you need to know before beginning feature constr
 – For deceased patients: Index date is 30 days prior to the death date (timestamp field) in mortality.csv.
 – For alive patients: Index date is the last event date in events.csv for each alive patient.
 
-SGD Logistic Regression
+
